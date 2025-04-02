@@ -1,0 +1,27 @@
+[
+  {
+    "Title": "iPhone 16 Pro Max",
+    "Company": "Apple",
+    "Price": 92000
+  },
+  {
+    "Title": "Galaxy S7 Edge",
+    "Company": "Samsung",
+    "Price": 60000
+  },
+  {
+    "Title": "Elite x3",
+    "Company": "HP",
+    "Price": 56000
+  },
+  {
+    "Title": "Mi5S",
+    "Company": "Xiaomi",
+    "Price": 35000
+  },
+  {
+    "Title": "Honor 10",
+    "Company": "Huawei",
+    "Price": 90000
+  }
+]
