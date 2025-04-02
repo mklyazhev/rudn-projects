@@ -1,0 +1,53 @@
+﻿<Window x:Class="WPF_arXiv_search.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_arXiv_search"
+        mc:Ignorable="d"
+        Title="arXiv Search" Height="600" Width="800">
+    <Grid>
+        <StackPanel Margin="20">
+            <Label Content="Поиск в arXiv:" FontWeight="Bold" FontSize="16"/>
+
+            <StackPanel Orientation="Horizontal" Margin="0,10">
+                <Label Content="Запрос:" Width="80" VerticalAlignment="Center"/>
+                <TextBox x:Name="SearchQueryTextBox" Width="400" Height="25"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" Margin="0,10">
+                <Label Content="Количество статей:" Width="120" VerticalAlignment="Center"/>
+                <TextBox x:Name="MaxResultsTextBox" Width="50" Height="25" Text="5"/>
+            </StackPanel>
+
+            <Button x:Name="SearchButton" Content="Поиск" Width="100" Height="30" Margin="0,20" Click="SearchButton_Click"/>
+
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,5">
+                <Button x:Name="SortAscButton" Content="Сортировать А-Я" 
+                        Width="120" Height="25" Margin="0,0,10,0" 
+                        Click="SortAscButton_Click"/>
+                <Button x:Name="SortDescButton" Content="Сортировать Я-А" 
+                        Width="120" Height="25" Margin="10,0,0,0" 
+                        Click="SortDescButton_Click"/>
+            </StackPanel>
+
+            <Label Content="Результаты:" FontWeight="Bold" Margin="0,10"/>
+            <ListBox x:Name="ResultsListBox" Height="300" Margin="0,10">
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel Margin="5">
+                            <TextBlock Text="{Binding Title}" FontWeight="Bold" TextWrapping="Wrap"/>
+                            <TextBlock Text="{Binding Authors}" FontStyle="Italic"/>
+                            <TextBlock Text="{Binding Summary}" TextWrapping="Wrap" MaxHeight="60" TextTrimming="CharacterEllipsis"/>
+                            <TextBlock>
+                                <Hyperlink NavigateUri="{Binding PdfLink}" RequestNavigate="Hyperlink_RequestNavigate">
+                                    <Run Text="{Binding PdfLink}"/>
+                                </Hyperlink>
+                            </TextBlock>
+                        </StackPanel>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+        </StackPanel>
+    </Grid>
+</Window>
