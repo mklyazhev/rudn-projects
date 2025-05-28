@@ -1,0 +1,15 @@
+C:\Users\gltuser\Desktop\home\git\rudn-projects\Test1\bin\Debug\net8.0\Test1.exe
+C:\Users\gltuser\Desktop\home\git\rudn-projects\Test1\bin\Debug\net8.0\Test1.deps.json
+C:\Users\gltuser\Desktop\home\git\rudn-projects\Test1\bin\Debug\net8.0\Test1.runtimeconfig.json
+C:\Users\gltuser\Desktop\home\git\rudn-projects\Test1\bin\Debug\net8.0\Test1.dll
+C:\Users\gltuser\Desktop\home\git\rudn-projects\Test1\bin\Debug\net8.0\Test1.pdb
+C:\Users\gltuser\Desktop\home\git\rudn-projects\Test1\obj\Debug\net8.0\Test1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gltuser\Desktop\home\git\rudn-projects\Test1\obj\Debug\net8.0\Test1.AssemblyInfoInputs.cache
+C:\Users\gltuser\Desktop\home\git\rudn-projects\Test1\obj\Debug\net8.0\Test1.AssemblyInfo.cs
+C:\Users\gltuser\Desktop\home\git\rudn-projects\Test1\obj\Debug\net8.0\Test1.csproj.CoreCompileInputs.cache
+C:\Users\gltuser\Desktop\home\git\rudn-projects\Test1\obj\Debug\net8.0\Test1.sourcelink.json
+C:\Users\gltuser\Desktop\home\git\rudn-projects\Test1\obj\Debug\net8.0\Test1.dll
+C:\Users\gltuser\Desktop\home\git\rudn-projects\Test1\obj\Debug\net8.0\refint\Test1.dll
+C:\Users\gltuser\Desktop\home\git\rudn-projects\Test1\obj\Debug\net8.0\Test1.pdb
+C:\Users\gltuser\Desktop\home\git\rudn-projects\Test1\obj\Debug\net8.0\Test1.genruntimeconfig.cache
+C:\Users\gltuser\Desktop\home\git\rudn-projects\Test1\obj\Debug\net8.0\ref\Test1.dll

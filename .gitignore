@@ -7,9 +7,9 @@ __pycache__/
 *.so
 
 # C# extensions
-bin/
-obj/
-packages/
+# bin/
+# obj/
+# packages/
 
 # Distribution / packaging
 .Python
@@ -134,7 +134,7 @@ celerybeat.pid
 
 # Environments
 .env
-.venv
+# .venv
 env/
 venv/
 ENV/
