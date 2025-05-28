@@ -131,7 +131,7 @@ namespace PhonesRepository {
             this.DeleteButton = ((System.Windows.Controls.Button)(target));
             
             #line 21 "..\..\MainWindow.xaml"
-            this.DeleteButton.Click += new System.Windows.RoutedEventHandler(this.DeleteButtonClick);
+            this.DeleteButton.Click += new System.Windows.RoutedEventHandler(this.DeleteButton_Click);
             
             #line default
             #line hidden

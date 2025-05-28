@@ -32,15 +32,13 @@ namespace PhonesRepository
             phonesViewModel.PrepareNewPhone();
 
             // Очищаем привязку и поля
-            PhoneTitle.Clear();
-            PhoneCompany.Clear();
-            PhonePrice.Clear();
+            ClearFields();
 
             // Устанавливаем фокус на первое поле
             PhoneTitle.Focus();
         }
 
-        private void DeleteButtonClick(object sender, RoutedEventArgs e)
+        private void DeleteButton_Click(object sender, RoutedEventArgs e)
         {
             if (phonesViewModel.SelectedPhone == null)
             {
