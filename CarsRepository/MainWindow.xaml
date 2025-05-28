@@ -1,0 +1,64 @@
+﻿<Window x:Class="CarsRepository.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CarsRepository" 
+        mc:Ignorable="d"
+        Title="Cars" Height="400" Width="800"
+        Closed="Window_Closed">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!-- Панель управления -->
+        <StackPanel Grid.Row="0" Orientation="Horizontal" Margin="5">
+            <ComboBox x:Name="FilterComboBox" 
+                      ItemsSource="{Binding BrandsList}"
+                      SelectedItem="{Binding SelectedBrand}"
+                      Width="150" Margin="0,0,10,0"/>
+            <Button Content="➕" ToolTip="Добавить новую машину" 
+                    Width="30" Height="30" Click="AddNewButton_Click"/>
+            <Button Content="🗑️" ToolTip="Удалить выбранную машину" 
+                    Width="30" Height="30" Margin="5,0,0,0" 
+                    Click="DeleteButton_Click"/>
+        </StackPanel>
+
+        <!-- Основной контент -->
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="0.8*"/>
+            </Grid.ColumnDefinitions>
+
+            <!-- Список автомобилей -->
+            <ListBox Grid.Column="0" ItemsSource="{Binding FilteredCarsList}" SelectedItem="{Binding SelectedCar}">
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel Margin="5">
+                            <TextBlock FontSize="16" Text="{Binding Path=Brand}" FontWeight="Bold"/>
+                            <TextBlock Text="{Binding Path=Model}"/>
+                            <TextBlock Text="{Binding Path=Year}"/>
+                            <TextBlock Text="{Binding Path=Mileage, StringFormat='Пробег: {0} км'}"/>
+                        </StackPanel>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+
+            <!-- Панель редактирования -->
+            <StackPanel Grid.Column="1" DataContext="{Binding SelectedCar}" Margin="10">
+                <TextBlock Text="Марка:" FontWeight="Bold"/>
+                <TextBox Name="Brand" Text="{Binding Brand}" Margin="0,0,0,5"/>
+                <TextBlock Text="Модель:" FontWeight="Bold"/>
+                <TextBox Name="Model" Text="{Binding Model}" Margin="0,0,0,5"/>
+                <TextBlock Text="Год выпуска:" FontWeight="Bold"/>
+                <TextBox Name="Year" Text="{Binding Year}" Margin="0,0,0,5"/>
+                <TextBlock Text="Пробег:" FontWeight="Bold"/>
+                <TextBox Name="Mileage" Text="{Binding Mileage}" Margin="0,0,0,10"/>
+                <Button Content="Сохранить" Click="SaveButton_Click"/>
+            </StackPanel>
+        </Grid>
+    </Grid>
+</Window>
