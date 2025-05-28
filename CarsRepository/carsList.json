@@ -1,62 +1,62 @@
 [
-    {
-        "Марка": "Toyota",
-        "Модель": "Supra MK4",
-        "Год выпуска": 1998,
-        "Пробег": 120000
-    },
-    {
-        "Марка": "Nissan",
-        "Модель": "Skyline GT-R R34",
-        "Год выпуска": 2002,
-        "Пробег": 80000
-    },
-    {
-        "Марка": "Mazda",
-        "Модель": "RX-7 FD3S",
-        "Год выпуска": 2000,
-        "Пробег": 95000
-    },
-    {
-        "Марка": "BMW",
-        "Модель": "M3 E30",
-        "Год выпуска": 1991,
-        "Пробег": 150000
-    },
-    {
-        "Марка": "Mercedes-Benz",
-        "Модель": "300SL Gullwing",
-        "Год выпуска": 1957,
-        "Пробег": 50000
-    },
-    {
-        "Марка": "Porsche",
-        "Модель": "911 GT3",
-        "Год выпуска": 2020,
-        "Пробег": 15000
-    },
-    {
-        "Марка": "Ford",
-        "Модель": "Mustang GT500",
-        "Год выпуска": 1967,
-        "Пробег": 200000
-    },
-    {
-        "Марка": "Chevrolet",
-        "Модель": "Corvette Stingray C3",
-        "Год выпуска": 1972,
-        "Пробег": 180000
-    },
-    {
-        "Марка": "Dodge",
-        "Модель": "Charger R/T",
-        "Год выпуска": 1970,
-        "Пробег": 220000
-    },
-    {
-        "Марка": "Mazda",
-        "Модель": "RX-8",
-        "Год выпуска": 2005,
-        "Пробег": 120000
-    }
+  {
+    "Model": "Supra MK4",
+    "Brand": "Toyota",
+    "Year": 1998,
+    "Mileage": 120000
+  },
+  {
+    "Model": "Skyline GT-R R34",
+    "Brand": "Nissan",
+    "Year": 2002,
+    "Mileage": 80000
+  },
+  {
+    "Model": "RX-7 FD3S",
+    "Brand": "Mazda",
+    "Year": 2000,
+    "Mileage": 95000
+  },
+  {
+    "Model": "M3 E30",
+    "Brand": "BMW",
+    "Year": 1991,
+    "Mileage": 150000
+  },
+  {
+    "Model": "300SL Gullwing",
+    "Brand": "Mercedes-Benz",
+    "Year": 1957,
+    "Mileage": 50000
+  },
+  {
+    "Model": "911 GT3",
+    "Brand": "Porsche",
+    "Year": 2020,
+    "Mileage": 15000
+  },
+  {
+    "Model": "Mustang GT500",
+    "Brand": "Ford",
+    "Year": 1967,
+    "Mileage": 200000
+  },
+  {
+    "Model": "Corvette Stingray C3",
+    "Brand": "Chevrolet",
+    "Year": 1972,
+    "Mileage": 180000
+  },
+  {
+    "Model": "Charger R/T",
+    "Brand": "Dodge",
+    "Year": 1970,
+    "Mileage": 220000
+  },
+  {
+    "Model": "RX-8",
+    "Brand": "Mazda",
+    "Year": 2005,
+    "Mileage": 120000
+  }
 ]

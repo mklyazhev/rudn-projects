@@ -46,7 +46,7 @@ namespace CarsRepository
                 return;
             }
 
-            var result = MessageBox.Show(
+            MessageBoxResult result = MessageBox.Show(
                 $"Удалить {carsViewModel.SelectedCar.Brand} {carsViewModel.SelectedCar.Model}?",
                 "Подтверждение",
                 MessageBoxButton.YesNo,

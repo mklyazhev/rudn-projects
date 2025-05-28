@@ -137,12 +137,16 @@ namespace CarsRepository
 
         private void UpdateBrandsList()
         {
+            string currSelectedBrand = SelectedBrand;
+
             BrandsList.Clear();
             BrandsList.Add("Все");
             foreach (var brand in CarsList.Select(c => c.Brand).Distinct())
             {
                 BrandsList.Add(brand);
             }
+
+            SelectedBrand = currSelectedBrand;
         }
 
         private void UpdateFilter()
