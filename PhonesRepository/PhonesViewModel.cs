@@ -13,7 +13,7 @@ namespace PhonesRepository
     {
         private Phone selectedPhone;
         private Phone newPhone;
-        private string _jsonPath;
+        private string jsonPath;
 
         public ObservableCollection<Phone> PhonesList { get; set; }
         public Phone SelectedPhone
@@ -28,13 +28,13 @@ namespace PhonesRepository
 
         public PhonesViewModel(string jsonPath)
         {
-            _jsonPath = jsonPath;
+            this.jsonPath = jsonPath;
             LoadData();
         }
 
         public void LoadData()
         {
-            FileStream fileStream = File.OpenRead(_jsonPath);
+            FileStream fileStream = File.OpenRead(jsonPath);
             PhonesList = JsonSerializer.Deserialize<ObservableCollection<Phone>>(fileStream);
         }
 
@@ -96,7 +96,7 @@ namespace PhonesRepository
                 };
 
                 string jsonString = JsonSerializer.Serialize(PhonesList, options);
-                File.WriteAllText(_jsonPath, jsonString);
+                File.WriteAllText(jsonPath, jsonString);
             }
             catch (Exception ex)
             {

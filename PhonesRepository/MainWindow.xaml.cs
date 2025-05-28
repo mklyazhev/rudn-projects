@@ -9,7 +9,6 @@ namespace PhonesRepository
     public partial class MainWindow : Window
     {
         private PhonesViewModel phonesViewModel;
-        private Phone _newPhone;
         private string jsonPath;
 
         public MainWindow()
